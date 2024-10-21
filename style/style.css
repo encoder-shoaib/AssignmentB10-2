@@ -3,4 +3,164 @@
 /* Font for all body  */
 body{
     font-family: "Inter", sans-serif;
+    background-color: black;
+}
+
+/* share style  */
+.d-flex{
+    display: flex;
+}
+
+/* color yellow */
+.brand-color{
+    color: rgb(230, 83, 60);
+}
+.primary-color{
+    color: rgb(255, 255, 255);
+}
+
+.button-color{
+    background-color: rgb(230, 83, 60);
+}
+
+header{
+    max-width: 1440px;
+    margin: 57px auto;
+}
+
+
+/* navbar */
+.navbar{
+    justify-content: space-between;
+    text-align: center;
+}
+.navbar h1{
+    font-size: 2.1rem;
+}
+
+.nav-links{
+    align-items: center;
+    list-style: none;
+    gap: 53px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    color: rgb(255, 255, 255);
+
+
+}
+#home{
+    padding: 8px 20px;
+    border-radius: 46px
+}
+
+
+/* banner  */
+.banner-container{
+    margin-top: 32px;
+    gap: 402px;
+    align-items: center;
+    
+}
+.banner-text{
+    max-width: 520px;;
+}
+.banner-text h1{
+    font-size: 4.9rem;
+}
+.header-button{
+    display: flex;
+    gap: 14px;
+}
+.header-button .button-1{
+    border: 1px solid rgb(230, 83, 60) ;
+    border-radius: 42px;
+    padding: 16px 40px;
+    margin-top: 28px;
+}
+#button-1{
+    border: 1px solid rgb(230, 83, 60) ;
+    border-radius: 42px;
+    padding: 16px 40px;
+    margin-top: 28px;
+    color: white;
+
+}
+#button-2{
+    border-radius: 42px;
+    padding: 16px 40px;
+    margin-top: 28px;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    background-color: rgb(34, 32, 32);
+}
+
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+.text-box {
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.text-box-round div{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60)  ;
+}
+
+.text-box h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: white;
+}
+
+.text-box p {
+    font-size: 16px;
+    color: rgba(239, 237, 232, 0.65);
+}
+
+.top-right {
+    position: absolute;
+    top: 19%;
+    right: 10%;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 10%;
 }
