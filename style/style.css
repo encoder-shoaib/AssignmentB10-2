@@ -83,18 +83,23 @@ header{
     gap: 14px;
 }
 #button-1{
-    border: 1px solid rgb(230, 83, 60) ;
+    border: none;
     border-radius: 42px;
     padding: 16px 40px;
     margin-top: 28px;
+    max-width: 244px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 
 }
 #button-2{
     border-radius: 42px;
     padding: 16px 40px;
+    max-width: 244px;
     margin-top: 28px;
     box-sizing: border-box;
     border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
     background-color: black;
 }
 
@@ -181,6 +186,8 @@ main{
     font-size: 4rem;
 }
 .changes-habits-img {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap: 50px;
     margin-top: 58px;
 }
@@ -216,8 +223,7 @@ main{
     font-size: 1.2rem
 }
 .run-an-extra-img img{
-    width: 100%px;
-    height: 314px;
+    width: 500px;
     border-radius: 18px;
 }
 
@@ -238,5 +244,20 @@ main{
 @media screen and (max-width:576px) {
     .banner-container{
         flex-direction: column;
+    }
+    .container{
+        padding-top: 0px;
+    }
+    .changes-habits-img{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .run-an-extra{
+        flex-direction: column;
+    }
+    .button-join{
+        max-width: 400px;
+    }
+    .run-an-extra-img img{
+        width: 100%;
     }
 }
