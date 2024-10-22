@@ -12,7 +12,10 @@
             <div class="nav-name">
                 <h1 class="brand-color">Fitness</h1>
             </div>
-            <div class="nav-links d-flex ">
+            <div class="hamburger-menu" id="hamburgerMenu" onclick="toggleMenu()">
+                <span class="primary-color">&#9776;</span>
+            </div>
+            <div class="nav-links d-flex " id="navLinks">
                 <li><a class="button-color" id="home" href="">Home</a></li>
                 <li><a href="">Service</a></li>
                 <li><a href="">Contact</a></li>
@@ -140,5 +143,12 @@
     <footer>
                        
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>

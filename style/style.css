@@ -65,6 +65,13 @@ header{
 }
 
 
+/* Hide hamburger menu */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 /* banner  */
 .banner-container{
     margin-top: 32px;
@@ -281,17 +288,41 @@ main{
 }
 
 
-
-
-
-
-
-
-
-
-
 /* media query style */
 @media screen and (max-width:576px) {
+    /* for navbar  */
+    .navbar{
+        align-items: center;
+    }
+    .nav-links{
+        margin-right: 40px;
+        gap: 5px;
+        max-width: 100px;
+        height: 200px;
+    }
+    .hamburger-menu {
+        display: block;
+        height: 49px;
+        width: 40px;
+        border-radius: 2px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #333;
+        width: 200px;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+        justify-content: space-around;
+    }
+    /* for banner  */
     .banner-container{
         flex-direction: column;
     }
@@ -310,4 +341,9 @@ main{
     .run-an-extra-img img{
         width: 100%;
     }
+
+
+
+
+
 }
