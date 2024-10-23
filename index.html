@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header class="huf-width">
-        <nav class="navbar d-flex">
+    <header>
+        <nav class="navbar d-flex huf-width">
             <div class="nav-name">
                 <h1 class="brand-color">Fitness</h1>
             </div>
@@ -22,7 +22,7 @@
                 <li><a href="">About</a></li>
             </div>
         </nav>
-        <section class="banner-container d-flex">
+        <section class="banner-container d-flex huf-width">
             <div class="banner-text">
                 <h1 class="primary-color">Get body in <i><span class="banner-style-text">Shape</span></i> & stay healthy</h1>
                 <p class="secondary-color">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
@@ -193,7 +193,37 @@
                 </div>    
             </div>
         </section>
- 
+        <!-- Extra section  -->
+        <section class="gym-feedback huf-width">
+            <div class="gym-feedback-text">
+                <h1 class="primary-color">Gym Feedback</h1>
+                <p class="secondary-color">We value your feedback! Let us know your thoughts on our gym, services, and trainers.</p>
+            </div>
+            <div class="gym-feedback-form">
+                <form action="" method="">
+                    <div class="feedback-form-input">
+                        <input type="text" id="name" name="name" class="secondary-color background-colo" placeholder="Your name..." required>
+                    </div>
+                    <div class="feedback-form-input">
+                        <input type="email" id="email" name="email" class="secondary-color background-colo" placeholder="Your email..." required>
+                    </div>
+                    <div class="feedback-form-input">
+                        <select id="rating" name="rating" class="secondary-color background-colo">
+                            <option value="5">5 - Excellent</option>
+                            <option value="4">4 - Very Good</option>
+                            <option value="3">3 - Good</option>
+                            <option value="2">2 - Fair</option>
+                            <option value="1">1 - Poor</option>
+                        </select>
+                    </div>
+                    <div class="feedback-form-input">
+                        <textarea id="comments" name="comments" rows="5" class="secondary-color background-colo" placeholder="Share your experience..."></textarea>
+                    </div>
+                    <button type="submit" class="primary-color button-color">Submit Feedback</button>
+                </form>
+            </div>
+        </section>
+        
     </main>
     <footer>
         <div class="footer-section d-flex">
