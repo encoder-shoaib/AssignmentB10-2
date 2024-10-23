@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 /* Font for all body  */
 body{
     font-family: "Inter", sans-serif;
@@ -79,6 +82,7 @@ header{
     margin-top: 32px;
     gap: 402px;
     align-items: center;
+    justify-content: center;
     
 }
 .banner-text{
@@ -86,6 +90,11 @@ header{
 }
 .banner-text h1{
     font-size: 4.9rem;
+}
+.banner-style-text{
+    font-family: "Great Vibes", cursive;
+    font-size: 4.9rem;
+    font-weight: 900px;
 }
 .header-button{
     display: flex;
@@ -290,26 +299,28 @@ header{
     padding: 10px;
     text-align: left;
 }
-.calculate-bmi-form{
+
+/* form part  */
+
+.calculate-bmi-form {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
-}
-.calculate-bmi-form input{
-    height: 48px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-}
-.calculate-bmi{
     max-width: 577px;
+    
 }
-.calculate-bmi h1{
-    font-size: 1.5rem;
-}
-#australia{
-    height: 48px;
+
+input, select {
+    padding: 10px;
+    font-size: 14px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.calculate-bmi-form select:nth-child(5) {
+    grid-column: span 2;
 }
 .Calculate{
     background-color: rgba(230, 83, 60, 1);
@@ -317,8 +328,8 @@ header{
     border-radius: 42px;
     padding: 16px 40px;
     margin-top: 34px;
-
 }
+
 
 /* meet-team */
 .meet-team{
